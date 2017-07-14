@@ -25,12 +25,23 @@ module.exports = function(grunt) {
                 ext: '.js',
                 expand: true
             }
+        },
 
+        sass: {
+            options: {},
+            files: {
+                cwd: 'app',
+                src: ['**/*.sass'],
+                dest: buildDir,
+                ext: '.css',
+                expand: true
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-babel');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-sass');
 
-    grunt.registerTask('default', ['copy', 'babel']);
+    grunt.registerTask('default', ['copy', 'babel', 'sass']);
 }

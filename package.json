@@ -19,12 +19,17 @@
         "electron-builder": "^19.16.0",
         "grunt": "^1.0.1",
         "grunt-babel": "^6.0.0",
-        "grunt-contrib-copy": "^1.0.0"
+        "grunt-contrib-copy": "^1.0.0",
+        "grunt-contrib-sass": "^1.0.0"
     },
     "babel": {
-        "plugins": ["transform-react-jsx"]
+        "plugins": [
+            "transform-react-jsx"
+        ]
     },
     "build": {
-        "files": ["build/app/**/**.*"]
+        "files": [
+            "build/app/**/**.*"
+        ]
     }
 }
