@@ -1,8 +1,8 @@
 {
-    "name": "Backer",
+    "name": "electron-react-template",
     "version": "0.0.0",
-    "author:": "Giacomo Agnetti",
-    "description": "Easy Google Drive file uploader",
+    "author:": "",
+    "description": "Electron React Template",
     "main": "build/app/main.js",
     "scripts": {
         "start": "grunt & electron .",
